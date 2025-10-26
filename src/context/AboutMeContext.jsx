@@ -17,9 +17,9 @@ export const AboutMeProvider = ({ children }) => {
 			value={{
 				aboutMe,
 				setAboutMe,
-				clientsHeading,
-				clientsData,
-				setClientsData,
+				//clientsHeading,
+				//clientsData,
+				//setClientsData,
 			}}
 		>
 			{children}

@@ -9,24 +9,30 @@ import UIImage2 from '../images/ui-project-2.jpg';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		category: 'Web Application',
+		title: 'iAssist',
+		category: 'Swift App',
+		short_desc: 'Swift App which improves iOS home screen usability for elderly users'
 		img: WebImage2,
 		ProjectHeader: {
-			title: 'Project Management UI - From Context',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: 'iAssist' ,
+			publishDate: '05/16/2025',
+			tags: 'Swift',
+			url: 'https://github.com/ariaramanathan/iAssist',
+			Collaborators: 'Aria Ramanathan'
 		},
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
-		category: 'Mobile Application',
+		title: 'Air Quality Alert System',
+		category: 'App',
+		short_dec: 'Alerts subscribers to air quality events within a two block radius. '
 		img: MobileImage2,
+		url: 'https://github.com/SpikeAlerts/SpikeAlerts_0',
+		Collaborators: 'Rob Hendrickson'
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
+		title: 'xxx',
 		category: 'UI/UX Design',
 		img: UIImage1,
 	},
