@@ -5,6 +5,7 @@ import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
 import logoLight from '../../images/logo-light.svg';
 import logoDark from '../../images/logo-dark.svg';
+import logo from '../../images/logo.jpeg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -49,13 +50,13 @@ const AppHeader = () => {
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
-									src={logoDark}
+									src={logo}
 									className="w-36"
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
-									src={logoLight}
+									src={logo}
 									className="w-36"
 									alt="Dark Logo"
 								/>
@@ -70,7 +71,7 @@ const AppHeader = () => {
 						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
 						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
+							<FiMoon className="text-ternary-dark hover:text-grey400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
 						) : (
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}

@@ -12,7 +12,7 @@ const ProjectsGrid = () => {
 		searchProjectsByTitle,
 		selectProject,
 		setSelectProject,
-		selectProjectsByCategory,
+		//selectProjectsByCategory,
 	} = useContext(ProjectsContext);
 
 	return (
@@ -95,21 +95,25 @@ const ProjectsGrid = () => {
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
 				{selectProject
-					? selectProjectsByCategory.map((project) => (
-							<ProjectSingle
-								title={project.title}
-								category={project.category}
-								image={project.img}
-								key={project.id}
-							/>
-					  ))
-					: searchProject
+					// ? selectProjectsByCategory.map((project) => (
+					// 		<ProjectSingle
+					// 			title={project.title}
+					// 			category={project.category}
+					// 			image={project.img}
+					// 			key={project.id}
+					// 			short_desc = {project.short_desc}
+					// 			url = {project.url}
+					// 		/>
+					//   ))
+					// : searchProject
 					? searchProjectsByTitle.map((project) => (
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
 								image={project.img}
 								key={project.id}
+								short_desc = {project.short_desc}
+								url = {project.url}
 							/>
 					  ))
 					: projects.map((project) => (
@@ -118,6 +122,8 @@ const ProjectsGrid = () => {
 								category={project.category}
 								image={project.img}
 								key={project.id}
+								short_desc = {project.short_desc}
+								url = {project.url}
 							/>
 					  ))}
 			</div>

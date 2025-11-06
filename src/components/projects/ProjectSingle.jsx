@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image }) => {
+const ProjectSingle = ({ title, category, image, url, short_desc}) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -25,9 +25,22 @@ const ProjectSingle = ({ title, category, image }) => {
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
 						</p>
-						<span className="text-lg text-ternary-dark dark:text-ternary-light">
+						<span className="text-sm text-ternary-dark dark:text-ternary-light">
 							{category}
 						</span>
+				
+						<br/>
+						<span className="text-sm text-ternary-dark dark:text-ternary-light">
+							{short_desc}
+						</span>
+
+						<br/>
+
+						
+
+
+
+
 					</div>
 				</div>
 			</Link>

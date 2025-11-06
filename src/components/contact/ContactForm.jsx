@@ -7,7 +7,45 @@ const ContactForm = () => {
 			<div className="leading-loose">
 				<form
 					onSubmit={(e) => {
+						console.log("submitted")
+	
 						e.preventDefault();
+						const formData = new FormData(e.target);
+					
+						formData.append("access_key", 'ff5c979d-da37-49dd-a01b-8c169b05df4b');
+
+						async function sendForm(){
+							console.log("here");
+
+							const object = Object.fromEntries(formData);
+							const json = JSON.stringify(object);
+
+							console.log("here");
+
+							const res = await fetch("https://api.web3forms.com/submit", {
+
+								method: "POST",
+								headers: {
+								  "Content-Type": "application/json",
+								  Accept: "application/json"
+								},
+								body: json
+							  }).then((res) => res.json());
+						  
+							  if (res.success) {
+								console.log("Success", res);
+							  }
+							  else{
+								console.log("error", res)
+							  }
+						}
+
+						sendForm();
+						console.log("send form called");
+					
+						
+					
+						
 					}}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
