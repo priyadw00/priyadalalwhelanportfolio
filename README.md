@@ -1,4 +1,17 @@
+
+
 # React & TailwindCSS Portfolio - With Dark Mode
+
+## TODO :
+
+__x center github buttons 
+_x_remove or customize category 
+__ fix spacing above github button
+__ make github project open in new tab
+__ fix email 
+__ fix colors 
+__ deploy 
+
 
 A simple portfolio starter theme built with React and Tailwind CSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
 

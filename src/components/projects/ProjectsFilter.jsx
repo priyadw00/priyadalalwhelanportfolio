@@ -7,7 +7,7 @@ const selectOptions = [
 
 const ProjectsFilter = ({ setSelectProject }) => {
 	return (
-		<select
+		<select 
 			onChange={(e) => {
 				setSelectProject(e.target.value);
 			}}
@@ -36,7 +36,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
 					{option}
 				</option>
 			))}
-		</select>
+	   </select>
 	);
 };
 

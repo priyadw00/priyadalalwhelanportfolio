@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
-import ProjectsFilter from './ProjectsFilter';
+//import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
 	const {
@@ -33,7 +33,6 @@ const ProjectsGrid = () => {
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
 				</h3>
 				<div
 					className="
@@ -89,7 +88,7 @@ const ProjectsGrid = () => {
 						/>
 					</div>
 
-					<ProjectsFilter setSelectProject={setSelectProject} />
+					{/* <ProjectsFilter setSelectProject={setSelectProject} /> */}
 				</div>
 			</div>
 

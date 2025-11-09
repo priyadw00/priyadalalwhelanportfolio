@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import SingleProjectContext from '../../context/SingleProjectContext';
 
+export default ProjectGallery;
+
 const ProjectGallery = () => {
 	const { singleProjectData } = useContext(SingleProjectContext);
 
@@ -20,6 +22,4 @@ const ProjectGallery = () => {
 			})}
 		</div>
 	);
-};
-
-export default ProjectGallery;
+}
